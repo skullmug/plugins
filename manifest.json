@@ -1454,6 +1454,19 @@
       "class": "VinNumber"
     },
     {
+      "id": "virustotal_report@1.0.0",
+      "version": "1.0.0",
+      "label": "VirusTotal Report",
+      "category": "Threat Intelligence, Documents",
+      "color": "#39476199",
+      "icon": "virus-search",
+      "author": "skullmug",
+      "description": "Represent a VirusTotal file analysis report.",
+      "file": "entities/virustotal_report.py",
+      "module": "entities.virustotal_report",
+      "class": "VirusTotalReport"
+    },
+    {
       "id": "weapon@1.0.0",
       "version": "1.0.0",
       "label": "Weapon",
@@ -1503,6 +1516,16 @@
       "function": "transform_extract_ip",
       "file": "transforms/dns.py",
       "module": "transforms.dns"
+    },
+    {
+      "id": "transforms.file_hash:to_virustotal",
+      "target": "file_hash@1.0.0",
+      "target_spec": "file_hash@1.0.0",
+      "label": "To VirusTotal",
+      "icon": "virus-search",
+      "function": "to_virustotal",
+      "file": "transforms/file_hash.py",
+      "module": "transforms.file_hash"
     },
     {
       "id": "transforms.ip:to_geolocation",
@@ -1723,11 +1746,13 @@
     "entities/username_profile.py": "5e4fec18a62e87d84bee06481822d2e79832add659fb4deb69b94f8f35ef205f",
     "entities/vehicle_registration.py": "c2ffdc7e393607c81d4dc399f3d7bf7d3a84d74230b06b601b4897a410c6b1a3",
     "entities/vin_number.py": "f18a1ce7e88bf4fee6746dcc61d9670e2ba265bf871884de4b8ac9d52dc26c28",
+    "entities/virustotal_report.py": "9c69cba29236723cb31993144cb302e6b39dfd2bce7cc7c1f263293de556881c",
     "entities/weapon.py": "a0cacea53fa9de0d2a0ce4d17cbac542f37671e58d688a673d3621e2f9759f5e",
     "entities/website.py": "57c905907459db6e2ab5019129d2723a5f301e1862f4b49dc8bb6e0355e2c5b4",
     "entities/whois.py": "a4f7e8a07288525dba0468910a0ea2786257d6678ec667efb19642661e16a330",
     "manifest.json": "a53e75c7376f5fce62474ed0f891ba0aa3791c8353987ba46761b02a1d16d4c7",
     "transforms/dns.py": "578195a12cffcaee6fad5c22e8703049a7667a0d126734a6df95bf32b13964e0",
+    "transforms/file_hash_to_virustotal.py": "9c69cba29236723cb31993144cb302e6b39dfd2bce7cc7c1f263293de556881c",
     "transforms/ip.py": "b3ab9e40d681347ceaf42721bdb69031f2bde72dbada2669cce60111e0c8b0d5",
     "transforms/url_to_website.py": "4728cb28d197f9bf0652ac190661cc8cd299749bfc648a0b7894900f9dc3bff2",
     "transforms/username.py": "9f1f6fa6b0407ebf510ade65da233a1d3aac972450de7bac684f5ae9da9f10bd",
