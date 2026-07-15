@@ -10,7 +10,7 @@ from omoika import transform, Registry
     icon="virus-search",
     deps=["httpx"],
 )
-async def to_virustotal(self, entity):
+async def to_virustotal(entity):
     import os
     api_key = os.environ.get("VT_API_KEY")
     if not api_key:
