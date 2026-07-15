@@ -26,6 +26,6 @@ class ShodanReport(omoika.Plugin):
         TextInput(label="Longitude", icon="navigation"),
         TextInput(label="Last Update", icon="clock"),
         TextInput(label="Country Name", icon="flag"),
-        TextInput(label="Operating System", icon="monitor"),
+        TextInput(label="Operating System", icon="device-desktop"),
         TextInput(label="Ports", icon="radio"),
     ]
