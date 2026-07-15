@@ -1259,6 +1259,19 @@
       "class": "Shodan"
     },
     {
+      "id": "shodan_report@1.0.0",
+      "version": "1.0.0",
+      "label": "Shodan Report",
+      "category": "Search",
+      "color": "#d74e3f",
+      "icon": "world-question",
+      "author": "skullmug",
+      "description": "Represent a Shodan report on an IP address.",
+      "file": "entities/shodan_report.py",
+      "module": "entities.shodan_report",
+      "class": "ShodanReport"
+    },
+    {
       "id": "shop@1.0.0",
       "version": "1.0.0",
       "label": "Shop",
@@ -1515,6 +1528,16 @@
       "module": "transforms.ip"
     },
     {
+      "id": "transforms.ip:to_shodan",
+      "target": "ip@1.0.0",
+      "target_spec": "ip@1.0.0",
+      "label": "To Shodan",
+      "icon": "world-question",
+      "function": "to_shodan",
+      "file": "transforms/ip_to_shodan.py",
+      "module": "transforms.ip_to_shodan"
+    },
+    {
       "id": "transforms.ip:to_subdomains",
       "target": "ip@1.0.0",
       "target_spec": "ip@1.0.0",
@@ -1708,6 +1731,7 @@
     "entities/religious_group.py": "c5b27f13651818b0635321890e2ac5933e4687e5b784d460914c50a7c4044fa0",
     "entities/robots_txt.py": "cd4965b16840ddbb4f017bb8d7b43e9760859e938c424549e329f55a2d72d4f4",
     "entities/shodan.py": "f3504708242e61ce8ee404c38ffb2fdb8500bb6f49f2a93dfa4a85758ec9b754",
+    "entities/shodan_report.py": "2ece8150edeecce85aa16d560143d4c591afedcc9c578f1ad360fc64d6eff363",
     "entities/shop.py": "6f222887533271f5c3cc8d165d1b5c9b1ff7b9bfc4b252292c12b724b181095a",
     "entities/smartphone.py": "89d6f0ac7479cfdf81a669e4630be426f3300505d9b8c3533a2dbba059f49f99",
     "entities/ssl_certificate.py": "5cc28f179275452f19d7745309d3e62ab665dc86a4d241235333aa958d034549",
@@ -1728,7 +1752,7 @@
     "entities/whois.py": "a4f7e8a07288525dba0468910a0ea2786257d6678ec667efb19642661e16a330",
     "manifest.json": "a53e75c7376f5fce62474ed0f891ba0aa3791c8353987ba46761b02a1d16d4c7",
     "transforms/dns.py": "578195a12cffcaee6fad5c22e8703049a7667a0d126734a6df95bf32b13964e0",
-    "transforms/ip.py": "b3ab9e40d681347ceaf42721bdb69031f2bde72dbada2669cce60111e0c8b0d5",
+    "transforms/ip.py": "d0728f2a9dfde078681c70378035c4b980bec673e106622e8c836f0fdadd581c",
     "transforms/url_to_website.py": "4728cb28d197f9bf0652ac190661cc8cd299749bfc648a0b7894900f9dc3bff2",
     "transforms/username.py": "9f1f6fa6b0407ebf510ade65da233a1d3aac972450de7bac684f5ae9da9f10bd",
     "transforms/username_profile.py": "0a153b93e13ddf79b2f2739c5ca92f56da9de3f0c9e4f5b0f5a3d4891e40ca83",
